@@ -7,10 +7,8 @@ package hu.unideb.inf.controller;
 
 import hu.unideb.inf.model.JpaKomponensek_DAO;
 import hu.unideb.inf.model.Komponensek;
-import hu.unideb.inf.model.Komponensek_DAO;
-import hu.unideb.inf.model.Student;
+
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
@@ -19,14 +17,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import javafx.util.Callback;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 /**
  * FXML Controller class
