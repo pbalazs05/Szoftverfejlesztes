@@ -14,7 +14,7 @@
             <Font name="Arial Bold" size="21.0" />
          </font>
       </Label>
-      <ComboBox fx:id="HazBox" layoutX="70.0" layoutY="120.0" prefHeight="0.0" prefWidth="250.0" promptText="Ház" />
+      <ComboBox fx:id="HazBox" layoutX="70.0" layoutY="120.0" prefHeight="0.0" prefWidth="250.0" promptText="Ház" onAction="#Hazbetoltese" />
       <ComboBox fx:id="TapBox" layoutX="70.0" layoutY="160.0" prefHeight="0.0" prefWidth="250.0" promptText="Tápegység" />
       <ComboBox fx:id="ProciBox" layoutX="70.0" layoutY="200.0" prefHeight="0.0" prefWidth="250.0" promptText="Processzor" />
       <ComboBox fx:id="AlaplBox" layoutX="70.0" layoutY="240.0" prefHeight="0.0" prefWidth="250.0" promptText="Alaplap" />

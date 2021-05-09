@@ -39,22 +39,12 @@ public class MainApp extends Application {
      * @param args the command line arguments
      */
 
-   /* // JDBC driver name and database URL
-    static final String JDBC_DRIVER = "org.h2.Driver";
-    static final String DB_URL = "jdbc:h2:~/OneDrive - Debreceni Egyetem/6.félév/Szoftverfejlesztés mérnököknek/Project/mappa/database.mv";
-
-    //  Database credentials
-    static final String USER = "Bazsa";
-    static final String PASS = "";*/
-
-
     private static Server s = new Server();
 
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/FXMLScene.fxml"));
         Scene scene = new Scene(loader.load());
-
         stage.setTitle("PC-Builder");
         stage.setScene(scene);
         stage.show();

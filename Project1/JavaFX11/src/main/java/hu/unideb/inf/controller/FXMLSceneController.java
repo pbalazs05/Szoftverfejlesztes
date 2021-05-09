@@ -5,6 +5,7 @@
  */
 package hu.unideb.inf.controller;
 
+import hu.unideb.inf.model.Connect;
 import hu.unideb.inf.model.JpaKomponensek_DAO;
 import hu.unideb.inf.model.Komponensek;
 
@@ -27,7 +28,7 @@ import javafx.scene.control.TextField;
 public class FXMLSceneController implements Initializable {
 
     @FXML
-    public ComboBox<Komponensek> HazBox;
+    public ComboBox<String> HazBox;
 
     @FXML
     private ComboBox<?> TapBox;
@@ -62,6 +63,10 @@ public class FXMLSceneController implements Initializable {
     @FXML
     private ComboBox<?> OprendszBox;
 
+    JpaKomponensek_DAO dao= new JpaKomponensek_DAO();
+    ObservableList<Komponensek> lista = FXCollections.observableArrayList(dao.getAllKomponens());
+    private Connect db = new Connect();
+
     @FXML
     private void HandleButtonPushed(ActionEvent event){
         System.out.println("Hello world!!!");
@@ -71,8 +76,6 @@ public class FXMLSceneController implements Initializable {
     @FXML
     private TextField OsszegField;
 
-    ObservableList<Komponensek> lista = FXCollections.observableArrayList();
-    private final JpaKomponensek_DAO komponensek_dao= new JpaKomponensek_DAO();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -80,9 +83,9 @@ public class FXMLSceneController implements Initializable {
 
     }
 
-/*
-Egy Set be kellene bekérni a database-rol az adatokat ID szerint
-Set<Komponensek>  input = sorokAzadatbazisbol_by_ID
- */
+    public void Hazbetoltese(ActionEvent actionEvent) {
+        HazBox.setItems(db.getData("NAME","KOMPONENSEK","alapL"));
+    }
+
 
 }
