@@ -21,6 +21,10 @@ public class Komponensek {
         Id = id;
     }
 
+    public Komponensek() {
+
+    }
+
     public String getName() { return Name; }
 
     public void setName(String name) { Name = name; }
