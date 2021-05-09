@@ -17,7 +17,7 @@ public class Connect {
     public Connect() {
         try{
             String myDriver = "org.h2.Driver";
-            String myUrl = "jdbc:h2:file:~/Documents/Szoftverfejlesztes/Project1/database.mv";
+            String myUrl = "jdbc:h2:file:~/Documents/Szoftverfejlesztes/Project1/JavaFX11/database.mv";
             Class.forName(myDriver);
             conn = DriverManager.getConnection(myUrl, "Bazsa", "");
             System.out.println("csatlakoztam");
