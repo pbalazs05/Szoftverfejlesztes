@@ -12,6 +12,7 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import hu.unideb.inf.model.Komponensek;
@@ -63,6 +64,9 @@ public class FXMLSceneController implements Initializable {
 
     @FXML
     public ComboBox<String> KeszGepekBox;
+
+    @FXML
+    public Button PayButton;
 
     @FXML
     private ComboBox<String> HazBox;
@@ -754,5 +758,21 @@ public class FXMLSceneController implements Initializable {
             SSDBox.setValue("Crucial 1TB BX500 SSD meghajtó (CT1000BX500SSD1) SSD 2,5"+'"');
             MerevlemezBox.setValue("Seagate 2TB 64MB ST2000VX008 merevlemez 3,5"+'"');
         }
+    }
+
+    public void PayButtonClicked(ActionEvent actionEvent) {
+
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("VASARLAS");
+            alert.setHeaderText(null);
+            alert.setContentText("Biztos meg akarja venni a terméket?  Ha igen kattintson az 'ok' gombra");
+            Optional<ButtonType> result = alert.showAndWait();
+            if(result.get() == ButtonType.OK) {
+                Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
+                alert1.setTitle("VASARLAS");
+                alert1.setHeaderText(null);
+                alert1.setContentText("Köszönjük a vásárlást!");
+                alert1.showAndWait();
+            }
     }
 }

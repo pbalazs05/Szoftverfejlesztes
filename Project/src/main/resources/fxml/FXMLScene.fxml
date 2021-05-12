@@ -147,6 +147,11 @@
             <Insets left="5.0" />
          </padding>
       </Label>
+      <Button fx:id="PayButton" layoutX="1090.0" layoutY="681.0" mnemonicParsing="false" onAction="#PayButtonClicked" text="Vásárlás">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Button>
 
    </children>
 </AnchorPane>
