@@ -16,7 +16,7 @@
             <Font name="Rockwell" size="24.0" />
          </font>
       </Label>
-      <Button fx:id="CalculateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="679.0" mnemonicParsing="false" onAction="#HandleButtonClicked" prefHeight="34.0" prefWidth="127.0" text="Összesítés">
+      <Button fx:id="CalculateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="679.0" mnemonicParsing="false" onAction="#HandleButtonClicked" prefHeight="40.0" prefWidth="127.0" text="Összesítés">
          <font>
             <Font name="Rockwell" size="16.0" />
          </font>
@@ -141,13 +141,13 @@
       <ComboBox fx:id="VideoCBox" layoutX="55.0" layoutY="435.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
       <ComboBox fx:id="SSDBox" layoutX="55.0" layoutY="500.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
       <ComboBox fx:id="MerevlemezBox" layoutX="55.0" layoutY="561.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
-      <ComboBox fx:id="KeszGepekBox" layoutX="55.0" layoutY="14.0" onAction="#BoxClicked" prefHeight="40.0" prefWidth="150.0" promptText="Kész gépek" style="-fx-font-size: 16.0" />
+      <ComboBox fx:id="KeszGepekBox" layoutX="55.0" layoutY="14.0" onAction="#BoxClicked" prefHeight="40.0" prefWidth="150.0" promptText="Kész gépek" style="-fx-font-size: 16.0; -fx-background-color: rgb(12,236,209);" />
       <Label fx:id="HddArLabel" layoutX="845.0" layoutY="561.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: black;">
          <padding>
             <Insets left="5.0" />
          </padding>
       </Label>
-      <Button fx:id="PayButton" layoutX="1090.0" layoutY="681.0" mnemonicParsing="false" onAction="#PayButtonClicked" text="Vásárlás">
+      <Button fx:id="PayButton" contentDisplay="CENTER" layoutX="1187.0" layoutY="679.0" mnemonicParsing="false" onAction="#PayButtonClicked" prefHeight="40.0" prefWidth="127.0" text="Vásárlás">
          <font>
             <Font name="Rockwell" size="16.0" />
          </font>

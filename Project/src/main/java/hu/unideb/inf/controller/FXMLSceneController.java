@@ -760,17 +760,7 @@ public class FXMLSceneController implements Initializable {
 
     public void PayButtonClicked(ActionEvent actionEvent) {
 
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("VASARLAS");
-        alert.setHeaderText(null);
-        alert.setContentText("Biztos meg akarja venni a terméket?  Ha igen kattintson az 'ok' gombra");
-        Optional<ButtonType> result = alert.showAndWait();
-        if(result.get() == ButtonType.OK) {
-            Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
-            alert1.setTitle("VASARLAS");
-            alert1.setHeaderText(null);
-            alert1.setContentText("Köszönjük a vásárlást!");
-            alert1.showAndWait();
-        }
+
+
     }
 }
