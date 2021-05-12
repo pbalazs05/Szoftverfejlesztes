@@ -711,18 +711,48 @@ public class FXMLSceneController implements Initializable {
 
     public void BoxClicked(ActionEvent actionEvent)  {
         String tartalom = KeszGepekBox.getValue();
-        if(tartalom.equals("Irodaigép")){
-            AlaplBox.setValue("AMD AM4 GigaByte A520M DS3H alaplap");
-
-
+        if(tartalom.equals("Irodai")){
+            HazBox.setValue("Cooler Master MasterBox Lite 3.1 MCW-L3B3-KANN-01 Számítógépház Mini és Micro");
+            TapBox.setValue("Be quiet! BN295 700W Pure Power 11 tápegység");
+            ProciBox.setValue("AMD Ryzen 5 1600 YD1600BBAEBOX processzor AMD AM4 processzor");
+            AlaplBox.setValue("AMD AM4 ASRock A320M Pro4-F alaplap");
+            MemoriaBox.setValue("ADATA  8GB GAMMIX D10 3000MHz DDR4 memória");
+            VideoCBox.setValue("Zotac GT710 1GB DDR3 (ZT-71301-20L) Videókártya");
+            SSDBox.setValue("HPE P04556-B21 240GB RI SFF SSD SSD 2,5"+'"');
+            MerevlemezBox.setValue("Western Digital 2TB 64MB SATA3 WD20EFRX merevlemez 3,5"+'"');
         }
 
         if(tartalom.equals("Gamer")){
-            AlaplBox.setValue("AMD AM4 GigaByte A520M DS3H alaplap");
-
+            HazBox.setValue("Cooler Master MB311 MCBB-311L-KGNN-S02 ARGB Számítógépház Mini és Micro");
+            TapBox.setValue("be quiet! BN298 Pure Power 11 600W 80+ Gold tápegység");
+            ProciBox.setValue("Intel Core i9-9900KF BX80684I99900KF processzor Intel 1151 v2 processzor");
+            AlaplBox.setValue("AMD AM4 ASRock A320M-DVS R40 alaplap");
+            MemoriaBox.setValue("ADATA  16GB GAMMIX D10 3000MHz DDR4 memória");
+            VideoCBox.setValue("Gainward RTX3060 12GB GDDR6 GHOST OC NE63060T19K9-190AU Videokártya nVidia");
+            SSDBox.setValue("Kingston 1TB SKC600/1024G SSD meghajtó SSD 2,5"+'"');
+            MerevlemezBox.setValue("Seagate 1TB 64MB ST1000VN002 merevlemez 3,5"+'"');
         }
 
+        if(tartalom.equals("Otthoni")){
+            HazBox.setValue("Cooler Master MCS-S400-KN5N-S00 Silencio S400 Steel Black Számítógépház Mini és Micro");
+            TapBox.setValue("Be quiet! BN305 550W 80+ Platinum Straight Power 11 tápegység");
+            ProciBox.setValue("INTEL Core i3-9300 3.70GHz BX80684I39300 processzor Intel 1151 v2 processzor");
+            AlaplBox.setValue("AMD AM4 ASRock A320M-HDV R40 alaplap");
+            MemoriaBox.setValue("APACER 4GB 2400MHz DDR4 memória");
+            VideoCBox.setValue("GIGABYTE GTX1650 4GB GDDR5 OC GV-N1650OC-4GD Videokártya nVidia");
+            SSDBox.setValue("Intel 480GB SSDSC2KG480G801 S4610 SSD meghajtó SSD 2,5"+'"');
+            MerevlemezBox.setValue("Seagate 1TB 64MB ST1000VX005 merevlemez 3,5"+'"');
+        }
 
-
+        if(tartalom.equals("Photoshop")){
+            HazBox.setValue("Cooler Master MCS-S400-KG5N-S00 Silencio S400 TG Black üveg ablakos Számítógépház Mini és Micro");
+            TapBox.setValue("Be quiet! BN306 650W 80+ Platinum Straight Power 11 tápegység");
+            ProciBox.setValue("AMD Ryzen 7 3800X 100-100000025BOX processzor AMD AM4 processzor");
+            AlaplBox.setValue("AMD AM4 ASRock A320M-ITX alaplap");
+            MemoriaBox.setValue("APACER 8GB 2400MHz DDR4 memória");
+            VideoCBox.setValue("Asus GT710 2GB GDDR5 GT710-SL-2GD5 Videokártya nVidia");
+            SSDBox.setValue("Crucial 1TB BX500 SSD meghajtó (CT1000BX500SSD1) SSD 2,5"+'"');
+            MerevlemezBox.setValue("Seagate 2TB 64MB ST2000VX008 merevlemez 3,5"+'"');
+        }
     }
 }
