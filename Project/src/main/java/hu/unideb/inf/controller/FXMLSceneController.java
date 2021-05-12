@@ -759,6 +759,7 @@ public class FXMLSceneController implements Initializable {
     }
 
     public void PayButtonClicked(ActionEvent actionEvent) {
+
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("VASARLAS");
         alert.setHeaderText(null);
