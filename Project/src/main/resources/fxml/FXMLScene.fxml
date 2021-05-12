@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="768.0" minWidth="1360.0" style="-fx-background-color: rgb(6,127,206);" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.controller.FXMLSceneController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="485.0" layoutY="46.0" prefHeight="34.0" prefWidth="447.0" text="Válaszd ki a kívánt alkatrészeket" textFill="#000700">
+         <font>
+            <Font name="Rockwell" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="CalculateButton" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="679.0" mnemonicParsing="false" onAction="#HandleButtonClicked" prefHeight="34.0" prefWidth="127.0" text="Összesítés">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="OsszegField" layoutX="826.0" layoutY="681.0" prefHeight="25.0" prefWidth="200.0" promptText="0 Ft" style="-fx-border-color: rgb(0,0,0);" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="826.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="681.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></TextField>
+      <Label layoutX="55.0" layoutY="105.0" text="Házak">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="168.0" text="Tápegységek">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="228.0" text="Processzorok">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="286.0" text="Alaplapok">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="356.0" text="Memóriák">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="480.0" text="SSD">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="541.0" text="Merevlemezek">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="415.0" text="Videokártyák">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hazlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="128.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="taplabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="188.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="procilabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="248.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="alaplabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="306.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="memorialabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="376.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="videoclabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="435.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="ssdlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="500.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="hddlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="1200.0" layoutY="561.0" prefHeight="25.0" prefWidth="100.0">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Label>
+      <Label fx:id="HazArLabel" contentDisplay="CENTER" layoutX="845.0" layoutY="125.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white" AnchorPane.leftAnchor="845.0">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="TapArLabel" layoutX="845.0" layoutY="188.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="ProciArLabel" layoutX="845.0" layoutY="248.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="AlapArLabel" layoutX="845.0" layoutY="306.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="MemoriArLabel" layoutX="845.0" layoutY="376.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="VideocArLabel" layoutX="845.0" layoutY="435.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="SsdArLabel" layoutX="845.0" layoutY="500.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label fx:id="HddArLabel" layoutX="845.0" layoutY="561.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-color: rgb(0,0,0); -fx-background-color: white" AnchorPane.bottomAnchor="184.0" AnchorPane.leftAnchor="845.0" AnchorPane.rightAnchor="366.0" AnchorPane.topAnchor="561.0">
+         <padding>
+            <Insets left="5.0" />
+         </padding></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="901.0" layoutY="93.0" prefHeight="25.0" prefWidth="89.0" text="Árak">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="HazBox" layoutX="55.0" layoutY="125.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="TapBox" layoutX="55.0" layoutY="188.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="ProciBox" layoutX="55.0" layoutY="248.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="AlaplBox" layoutX="55.0" layoutY="306.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="MemoriaBox" layoutX="55.0" layoutY="376.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="VideoCBox" layoutX="55.0" layoutY="435.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="SSDBox" layoutX="55.0" layoutY="500.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="MerevlemezBox" layoutX="55.0" layoutY="561.0" prefHeight="25.0" prefWidth="540.0" promptText="Válassz egy terméket!" style="-fx-background-color: white;" />
+      <ComboBox fx:id="KeszGepekBox" layoutX="55.0" layoutY="14.0" onAction="#BoxClicked" prefHeight="40.0" prefWidth="150.0" promptText="Kész gépek" style="-fx-font-size: 16.0" />
+
+   </children>
+</AnchorPane>
