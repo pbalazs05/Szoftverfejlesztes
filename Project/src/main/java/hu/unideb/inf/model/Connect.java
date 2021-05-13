@@ -17,7 +17,7 @@ public class Connect {
             String myUrl = "jdbc:mysql://localhost/adatbazis";
             Class.forName(myDriver);
             conn = DriverManager.getConnection(myUrl, "root", "");
-            System.out.println("sikerült a csatlakozas");
+            System.out.println("Sikerült a csatlakozas");
         }
         catch (Exception e){
             System.err.println("Got an exception! ");
