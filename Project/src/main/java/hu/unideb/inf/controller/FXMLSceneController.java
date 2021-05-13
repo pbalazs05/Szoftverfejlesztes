@@ -632,7 +632,6 @@ public class FXMLSceneController implements Initializable {
         });
 
     }
-
         /*
         try {
                     Thread.sleep(1500);
@@ -664,7 +663,6 @@ public class FXMLSceneController implements Initializable {
         db.rs.close();
         return lista;
     }*/
-
     //ezt a fügvényt meghívva kerülnek be a komponensek nevei a boxok-ba
     ObservableList<String> listazasOB(String kp_id)throws SQLException{
         db.getData("*","KOMPONENSEK","KP_ID='"+kp_id+"'");
@@ -677,7 +675,6 @@ public class FXMLSceneController implements Initializable {
         db.rs.close();
         return oblista;
     }
-
     //ez a fügvény fogja beolvasni az előre összeállított gépek, nevét a Kész Gépek box-ba
     ObservableList<String> ReadyPC() throws  SQLException{
         db.getData1("*","konfigok");
@@ -710,7 +707,6 @@ public class FXMLSceneController implements Initializable {
         return oblista;
     }
     */
-
     public void BoxClicked(ActionEvent actionEvent)  {
         String tartalom = KeszGepekBox.getValue();
         if(tartalom.equals("Irodai")){
@@ -723,7 +719,6 @@ public class FXMLSceneController implements Initializable {
             SSDBox.setValue("HPE P04556-B21 240GB RI SFF SSD SSD 2,5"+'"');
             MerevlemezBox.setValue("Western Digital 2TB 64MB SATA3 WD20EFRX merevlemez 3,5"+'"');
         }
-
         if(tartalom.equals("Gamer")){
             HazBox.setValue("Cooler Master MB311 MCBB-311L-KGNN-S02 ARGB Számítógépház Mini és Micro");
             TapBox.setValue("be quiet! BN298 Pure Power 11 600W 80+ Gold tápegység");
@@ -734,7 +729,6 @@ public class FXMLSceneController implements Initializable {
             SSDBox.setValue("Kingston 1TB SKC600/1024G SSD meghajtó SSD 2,5"+'"');
             MerevlemezBox.setValue("Seagate 1TB 64MB ST1000VN002 merevlemez 3,5"+'"');
         }
-
         if(tartalom.equals("Otthoni")){
             HazBox.setValue("Cooler Master MCS-S400-KN5N-S00 Silencio S400 Steel Black Számítógépház Mini és Micro");
             TapBox.setValue("Be quiet! BN305 550W 80+ Platinum Straight Power 11 tápegység");
@@ -745,7 +739,6 @@ public class FXMLSceneController implements Initializable {
             SSDBox.setValue("Intel 480GB SSDSC2KG480G801 S4610 SSD meghajtó SSD 2,5"+'"');
             MerevlemezBox.setValue("Seagate 1TB 64MB ST1000VX005 merevlemez 3,5"+'"');
         }
-
         if(tartalom.equals("Photoshop")){
             HazBox.setValue("Cooler Master MCS-S400-KG5N-S00 Silencio S400 TG Black üveg ablakos Számítógépház Mini és Micro");
             TapBox.setValue("Be quiet! BN306 650W 80+ Platinum Straight Power 11 tápegység");
@@ -757,7 +750,6 @@ public class FXMLSceneController implements Initializable {
             MerevlemezBox.setValue("Seagate 2TB 64MB ST2000VX008 merevlemez 3,5"+'"');
         }
     }
-
     public void PayButtonClicked(ActionEvent actionEvent) {
         if(!((OsszegField.getText().equals("")) || (OsszegField.getText().equals("0 Ft"))) ) {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -773,6 +765,5 @@ public class FXMLSceneController implements Initializable {
                 alert1.showAndWait();
             }
         }
-
     }
 }

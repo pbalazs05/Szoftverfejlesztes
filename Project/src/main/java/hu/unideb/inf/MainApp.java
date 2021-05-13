@@ -19,7 +19,7 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/FXMLScene.fxml"));
         Scene scene = new Scene(loader.load());
-        stage.setTitle("PC-Builder");
+        stage.setTitle("Handabanda-Builder");
         stage.setScene(scene);
         stage.show();
 
