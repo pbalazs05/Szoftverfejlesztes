@@ -1,0 +1,18 @@
+<build>
+  <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        ...
+        <configuration>
+          <goalPrefix>sonar</goalPrefix>
+        </configuration>
+        ...
+      </plugin>
+      ...
+    </plugins>
+    ...
+  </pluginManagement>
+  ...
+</build>
